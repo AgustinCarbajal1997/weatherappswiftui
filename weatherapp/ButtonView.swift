@@ -1,8 +1,14 @@
-//
-//  ButtonView.swift
-//  weatherapp
-//
-//  Created by Agustin Carbajal on 12/11/2023.
-//
+import SwiftUI
 
-import Foundation
+struct ButtonView: View {
+    
+    var text: String
+    
+    var body: some View {
+        Text(text)
+            .frame(width: 280, height: 50)
+            .background(.white)
+            .font(.system(size: 20, weight: .medium, design: .default))
+            .cornerRadius(10)
+    }
+}
